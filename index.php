@@ -55,19 +55,19 @@
         <h2>Merchandise</h2>
         <div class="row">
           <div class="product">
-            <img src="images/merchandise/mok.JPG" alt="Een mok van DeveloperLand">
-            <span>Een mok met jouw eigen actiefoto erop!</span>
-            <a href="product.html"><button>Bestel nu (&euro; 14,95)</button></a>
+          <img src="img/merchandise/Schermafbeelding 2022-04-13 131236.png" alt="B&C #E190 Heren T-Shirt">
+            <span>B&C #E190 HEREN T-SHIRT!</span>
+            <a href="product.html"><button>Bestel nu (&euro; 17,50)</button></a>
           </div>
           <div class="product">
-            <img src="images/merchandise/mok.JPG" alt="Een mok van DeveloperLand">
-            <span>Een mok met jouw eigen actiefoto erop!</span>
-            <a href="product.html"><button>Bestel nu (&euro; 14,95)</button></a>
+          <img src="img/merchandise/Schermafbeelding 2022-04-13 131430.png" alt="Een mok van DeveloperLand">
+            <span>Under Armor Rival Fleece Hoodie</span>
+            <a href="product.html"><button>Bestel nu (&euro; 73,00)</button></a>
           </div>
           <div class="product">
-            <img src="images/merchandise/mok.JPG" alt="Een mok van DeveloperLand">
-            <span>Een mok met jouw eigen actiefoto erop!</span>
-            <a href="product.html"><button>Bestel nu (&euro; 14,95)</button></a>
+          <img src="img/merchandise/Schermafbeelding 2022-04-13 131630.png" alt="Jako Longsleeve Run 2.0 Heren">
+            <span>Jako Longsleeve Run 2.0 Heren!</span>
+            <a href="product.html"><button>Bestel nu (&euro; 23,90)</button></a>
           </div>
         </div>
       </article>
