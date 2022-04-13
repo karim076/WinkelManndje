@@ -11,7 +11,7 @@
   <header>
     <div class="header-content">
       <div class="wrapper">
-        <img src="images/logo-big-v3.png" alt="Het logo van DeveloperLand met een draaimolen, kasteel, achtbaan en tot slot een gezin op de voorgrond." class="logo hidden-on-sm">
+        <img src="img/logo.png" alt="Het logo van DeveloperLand met een draaimolen, kasteel, achtbaan en tot slot een gezin op de voorgrond." class="logo hidden-on-sm">
         <h1 class="hidden-on-lg">DeveloperLand</h1>
       </div>
     </div>
@@ -30,7 +30,7 @@
       </div>
       <div class="row2 groen">
         <article>
-            <h2 class="rides">Bekijk onze geweldige attracties</h2>
+            <h2 class="rides">Bekijk onze geweldige tripjes</h2>
             <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Asperiores dolor id doloremque accusamus quod. Repellat cupiditate unde aperiam, ex fugiat beatae fuga. Esse distinctio rerum expedita fuga libero adipisci quis!</p>
         </article>
         <article>
