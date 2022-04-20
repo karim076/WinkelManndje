@@ -42,13 +42,13 @@
         <h2>Koop nu je tickets</h2>
         <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Consequatur, ad. Similique neque sequi quibusdam, harum ratione fugit quia cupiditate doloribus totam obcaecati perferendis asperiores necessitatibus, exercitationem pariatur magni, quaerat minima.</p>
         <p>
-          <button><a href="cart.html">Bestel nu de tickets (&euro; 24,95)</a></button>
+          <button><a href="cart.php">Bestel nu de tickets (&euro; 24,95)</a></button>
         </p>
         <p>
           Of neem een abonnement, want met slechts 4 bezoekjes ben je al voordeliger uit!
         </p>
         <p>
-          <button><a href="cart.html">Bestel een abonnement (&euro; 99 per jaar)</a></button>
+          <button><a href="cart.php">Bestel een abonnement (&euro; 99 per jaar)</a></button>
           </p>
       </article>
       <article>
@@ -60,7 +60,7 @@
           </div>
           <div>
             <span>HEREN T-SHIRT!</span>
-            <a href="product.html"><button>Bestel nu (&euro; 17,50)</button></a>
+            <a href="product.php"><button>Bestel nu (&euro; 17,50)</button></a>
           </div>
           </div>
           <div class="product">
@@ -69,7 +69,7 @@
             </div>
             <div>
               <span>Under Armor Rival Fleece Hoodie</span>
-              <a href="product.html"><button>Bestel nu (&euro; 73,00)</button></a>
+              <a href="product.php"><button>Bestel nu (&euro; 73,00)</button></a>
             </div>
           </div>
           <div class="product">
@@ -78,7 +78,7 @@
             </div>
             <div>
               <span>Jako Longsleeve Run 2.0 Heren!</span>
-              <a href="product.html"><button>Bestel nu (&euro; 23,90)</button></a>
+              <a href="product.php"><button>Bestel nu (&euro; 23,90)</button></a>
             </div>
           </div>
         </div>
