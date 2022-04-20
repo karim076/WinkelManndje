@@ -59,7 +59,7 @@
             <img src="img/merchandise/Schermafbeelding 2022-04-13 131236.png" alt="B&C #E190 Heren T-Shirt">
           </div>
           <div>
-            <span>B&C #E190 HEREN T-SHIRT!</span>
+            <span>HEREN T-SHIRT!</span>
             <a href="product.html"><button>Bestel nu (&euro; 17,50)</button></a>
           </div>
           </div>
