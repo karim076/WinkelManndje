@@ -29,7 +29,7 @@
             <p><strong>Lorem ipsum dolor sit</strong> amet consectetur, adipisicing elit. Aperiam, rem.<br>
             <strong>ipsum dolor sit</strong> amet consectetur, adipisicing elit. Perferendis itaque <strong>possimus ipsam distinctio</strong> amet suscipit deleniti officia, soluta voluptates, reprehenderit natus iusto, adipisci fugiat mollitia.</p>
             <p>
-              <button><a href="cart.html">Bestel nu de tickets (&euro; 24,95)</a></button>
+              <button><a href="cart.php">Bestel nu de tickets (&euro; 24,95)</a></button>
             </p>
           </div>
         </div>
