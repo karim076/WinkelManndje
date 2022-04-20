@@ -54,7 +54,6 @@
               <td>&euro; 64,85</td>
             </tr>
           </table>
-          
           <button><a href="payment.html">Dit is correct, verder naar betaling</a></button>
         </div>
       </article>
