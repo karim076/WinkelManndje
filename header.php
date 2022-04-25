@@ -6,7 +6,7 @@
         <a class="active" href="<?php echo $base_url?>/index.php"><i class="fa fa-fw fa-home"></i> Home</a>
         <?php 
         error_reporting(E_ALL);
-        if(isset($_SESSION['role']) === "3"): var_dump($_SESSION['role'])?>
+        if(isset($_SESSION['role']) === "2"): var_dump($_SESSION['role'])?>
             <a href="<?php echo $base_url?>/panel/adminPanel.php"><i class="fa fa-user-tie"></i> Adminpaneel</a>
         <?php endif;?>
         </div>
