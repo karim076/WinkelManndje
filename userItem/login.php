@@ -23,6 +23,12 @@
 				<input type="submit" content="Log In Now" class="button login__submit">
 				</button>				
 			</form>
+			<div class="social-login">
+				<h3>Geen account</h3>
+				<div class="social-icons">
+					<a href="register.php">Klik hier</a>
+				</div>
+			</div>
 		</div>
 		<div class="screen__background">
 			<span class="screen__background__shape screen__background__shape4"></span>
