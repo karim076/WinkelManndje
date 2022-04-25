@@ -1,20 +1,11 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>DeveloperLand - Het meest leerzame prepark voor het hele gezin!</title>
-
-  <link rel="stylesheet" href="styles/main.css">
+  <?php require_once 'head.php' ?>
 </head>
 <body>
   <header>
-    <div class="header-content">
-      <div class="wrapper">
-        <img src="imag/logo-big-v3.png" alt="Het logo van DeveloperLand met een draaimolen, kasteel, achtbaan en tot slot een gezin op de voorgrond." class="logo hidden-on-sm">
-        <h1 class="hidden-on-lg">DeveloperLand</h1>
-      </div>
-    </div>
+    <?php require_once 'header.php' ?>
   </header>
   <main>
     <div class="wrapper">
