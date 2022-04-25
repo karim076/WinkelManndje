@@ -35,7 +35,6 @@
     {
         die("Error:wachtwoord niet juist!");
     }
-
     //4. Alles alles klopt: stop gebruikersgegevens in de session
     $_SESSION['user_id'] = $user['id'];
     $_SESSION['username'] = $user["username"];

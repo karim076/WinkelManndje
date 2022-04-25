@@ -2,9 +2,16 @@
 ?>
 
 <div class="navbar">
-    <a class="active" href="<?php echo $base_url?>/index.php"><i class="fa fa-fw fa-home"></i> Home</a>
+    <div>
+        <a class="active" href="<?php echo $base_url?>/index.php"><i class="fa fa-fw fa-home"></i> Home</a>
+        <?php 
+        error_reporting(E_ALL);
+        if(isset($_SESSION['role']) === "3"): var_dump($_SESSION['role'])?>
+            <a href="<?php echo $base_url?>/panel/adminPanel.php"><i class="fa fa-user-tie"></i> Adminpaneel</a>
+        <?php endif;?>
+        </div>
     <div class="left">
-<?php   error_reporting(E_ERROR | E_WARNING | E_PARSE);
+    <?php   error_reporting(E_ERROR | E_WARNING | E_PARSE);
         session_start();
         if(isset($_SESSION['user_id'])): ?>
             <i class="fa fa-fw fa-user"></i>Welcome,<?php echo $_SESSION['name'] ?>
