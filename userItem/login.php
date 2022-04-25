@@ -6,7 +6,7 @@
 </head>
 <body>
   <header>
-    <?php require_once '../header.php' ?>
+    <?php require_once '../header.php'; session_start();?>
   </header>
   <div class="container">
 	<div class="screen">
