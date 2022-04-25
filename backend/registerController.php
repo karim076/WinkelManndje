@@ -59,6 +59,7 @@
         ":email" => $email,
         ":pass" => $hash
     ]);
+    $_SESSION['logged'] = "<div class='msg'>Account succesvol aangemaakt. </div>";
     $msg = "Uw acount is Succesvol aangemaakt log nu in!";
     header("location: $base_url/userItem/login.php?msg=$msg");
     exit;
