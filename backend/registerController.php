@@ -41,12 +41,13 @@
         die();
     }
     // hashing
-    $hash = password_hash($password, PASSWORD_DEFAULT);
+    $hash = password_hash($pass, PASSWORD_DEFAULT);
     //1. Verbinding
     require_once 'conn.php';
     
     //2. Query
-    $query = "INSERT INTO users(name,username,password) VALUES(:name,:username,:password)";
+    $query = "INSERT INTO users(username,name,pass) 
+              VALUES(:username,:name,:pass)";
     
     //3. Prepare
     $statement=$conn->prepare($query);
@@ -55,7 +56,7 @@
     ([
         ":name" => $name,
         ":username" => $username,
-        ":password" => $hash
+        ":pass" => $hash
     ]);
     $msg = "Uw acount is Succesvol aangemaakt log nu in!";
     header("location: $base_url/login.php?msg=$msg");
