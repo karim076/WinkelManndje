@@ -1,9 +1,18 @@
-<?php require_once 'backend/config.php' ?>
+<?php require_once 'backend/config.php';
+?>
+
 <div class="navbar">
     <a class="active" href="<?php echo $base_url?>/index.php"><i class="fa fa-fw fa-home"></i> Home</a>
     <div class="left">
-        <a href="<?php echo $base_url?>/userItem/register.php"><i class="fa-solid fa-user-plus"></i> register</a>
-        <a href="<?php echo $base_url?>/userItem/login.php"><i class="fa fa-fw fa-user"></i> Login</a>
+<?php   error_reporting(E_ERROR | E_WARNING | E_PARSE);
+        session_start(); 
+        if(!isset($_SESSION['user_id'])): ?>
+            <a href="<?php echo $base_url?>/userItem/register.php"><i class="fa-solid fa-user-plus"></i> register</a>
+            <a href="<?php echo $base_url?>/userItem/login.php"><i class="fa fa-fw fa-user"></i> Login</a>
+        <?php else: ?>
+            <i class="fa fa-fw fa-user"></i>Welcome,<?php echo $_SESSION['username'] ?>
+            <a href="<?php echo $base_url?>/userItem/logout.php">Loguit</a>
+        <?php endif; ?>
     </div>
 </div>
 <div class="header-content">

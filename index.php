@@ -1,7 +1,9 @@
+<?php session_start();
+?>
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <?php require_once 'head.php' ?>
+  <?php require_once 'head.php'; ?>
   <title>DeveloperLand - Het meest leerzame prepark voor het hele gezin!</title>
 </head>
 <body>
