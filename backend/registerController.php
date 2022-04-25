@@ -16,23 +16,23 @@
     # checks
     if(empty($username))
     {
-        $msg = "Vul een titel in";
-        header("location: ../task/create.php?msg=$msg");
+        $_SESSION['logged'] = "Vul een titel in";
+        header("location: ../userItem/register.php");
     }
     else if(empty($name))
     {
-        $msg = "Vul een naam in";
-        header("location: ../task/create.php?msg=$msg");
+        $_SESSION['logged'] = "Vul een naam in";
+        header("location: ../userItem/register.php");
     }
     else if(empty($email))
     {
-        $msg = "kies een asignee";
-        header("location: ../task/create.php?msg=$msg");
+        $_SESSION['logged'] = "kies een email";
+        header("location: ../userItem/register.php");
     }
     else if(empty($pass))
     {
-        $msg = "Vul een beschrijving in";
-        header("location: ../task/create.php?msg=$msg");
+        $_SESSION['logged'] = "Vul een wachtwoord in";
+        header("location: ../userItem/register.php");
     }
 
     if(isset($errors))
