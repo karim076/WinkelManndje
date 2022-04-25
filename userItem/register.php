@@ -9,7 +9,11 @@
   <header>
     <?php require_once '../header.php' ?>
   </header>
-  <div class="center"><h2>registreren</h2></div>  
+  <div class="center"><h2>registreren</h2></div> 
+  <?php  
+	if(isset($_SESSION['logged'])): ?>
+		<div><?php echo $_SESSION['logged']; ?></div>
+	<?php endif;?>
   <div class="container">
 	<div class="screen">
 		<div class="screen__content">
