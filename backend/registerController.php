@@ -7,17 +7,32 @@
     $username = $_POST['username'];
     $name = $_POST['name'];
     $email = $_POST['email'];
-    $password = $_POST['password'];
-    $passwordRetry = $_POST['passwordRetry'];
+    $pass = $_POST['pass'];
     # kijkt of het email geldig is
     if(filter_var($email,FILTER_VALIDATE_EMAIL) === false)
     {
         die('Email is ongeldig!');
     }
-    # hashing
-    if ($password != $passwordRetry)
+    # checks
+    if(empty($username))
     {
-        die("Voer het zelfde wachtwoord in!");
+        $msg = "Vul een titel in";
+        header("location: ../task/create.php?msg=$msg");
+    }
+    else if(empty($name))
+    {
+        $msg = "Vul een naam in";
+        header("location: ../task/create.php?msg=$msg");
+    }
+    else if(empty($email))
+    {
+        $msg = "kies een asignee";
+        header("location: ../task/create.php?msg=$msg");
+    }
+    else if(empty($pass))
+    {
+        $msg = "Vul een beschrijving in";
+        header("location: ../task/create.php?msg=$msg");
     }
 
     if(isset($errors))
@@ -25,7 +40,7 @@
         var_dump($errors);
         die();
     }
-    
+    // hashing
     $hash = password_hash($password, PASSWORD_DEFAULT);
     //1. Verbinding
     require_once 'conn.php';
