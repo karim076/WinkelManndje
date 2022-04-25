@@ -182,3 +182,14 @@ body {
 	text-decoration: none;	
 	text-shadow: 0px 0px 8px #7875B5;
 }
+.msg{
+	width: 30%;
+	padding-top: 20px;
+	padding-bottom: 20px;
+	border-radius: 20px;
+	margin: 0 auto;
+	display: flex;
+	justify-content: center;
+	background: lightcyan;
+	color: black;
+}
