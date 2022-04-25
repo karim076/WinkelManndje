@@ -18,6 +18,5 @@
 <div class="header-content">
     <div class="wrapper">
         <img src="<?php echo $base_url?>/img/logo.png" alt="Het logo van DeveloperLand met een draaimolen, kasteel, achtbaan en tot slot een gezin op de voorgrond." class="logo hidden-on-sm">
-        <h1 class="hidden-on-lg">DeveloperLand</h1>
     </div>
 </div>
