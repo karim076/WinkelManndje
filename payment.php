@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <?php require_once 'head.php' ?>
+  <?php require_once 'head.php'; session_start(); ?>
 </head>
 <body>
   <header>

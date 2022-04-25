@@ -1,12 +1,12 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <?php require_once '../head.php' ?>
+  <?php require_once '../head.php' ; session_start();?>
   <link rel="stylesheet" href="../styles/login.css">
 </head>
 <body>
   <header>
-    <?php require_once '../header.php'; session_start();?>
+    <?php require_once '../header.php'?>
   </header>
   <div class="container">
 	<div class="screen">

@@ -6,12 +6,12 @@
     <div class="left">
 <?php   error_reporting(E_ERROR | E_WARNING | E_PARSE);
         session_start(); 
-        if(!isset($_SESSION['user_id'])): ?>
+        if(isset($_SESSION['user_id'])): ?>
             <a href="<?php echo $base_url?>/userItem/register.php"><i class="fa-solid fa-user-plus"></i> register</a>
             <a href="<?php echo $base_url?>/userItem/login.php"><i class="fa fa-fw fa-user"></i> Login</a>
         <?php else: ?>
             <i class="fa fa-fw fa-user"></i>Welcome,<?php echo $_SESSION['username'] ?>
-            <a href="<?php echo $base_url?>/userItem/logout.php">Loguit</a>
+            <a href="<?php echo $base_url?>/userItem/logout.php">Log uit</a>
         <?php endif; ?>
     </div>
 </div>
