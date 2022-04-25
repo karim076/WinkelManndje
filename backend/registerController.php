@@ -46,8 +46,8 @@
     require_once 'conn.php';
     
     //2. Query
-    $query = "INSERT INTO users(username,name,pass) 
-              VALUES(:username,:name,:pass)";
+    $query = "INSERT INTO users(username,name,email,pass) 
+              VALUES(:username,:name,:email,:pass)";
     
     //3. Prepare
     $statement=$conn->prepare($query);
@@ -56,6 +56,7 @@
     ([
         ":name" => $name,
         ":username" => $username,
+        ":email" => $email,
         ":pass" => $hash
     ]);
     $msg = "Uw acount is Succesvol aangemaakt log nu in!";
