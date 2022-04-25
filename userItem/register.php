@@ -13,7 +13,7 @@
   <div class="container">
 	<div class="screen">
 		<div class="screen__content">
-			<form class="login" method="POST" action="../backend/loginController.php">
+			<form class="login" method="POST" action="../backend/registerController.php">
 				<div class="login__field">
 					<i class="login__icon fas fa-user"></i>
 					<input type="text" class="login__input" name="username" placeholder="Username" required>
