@@ -1,3 +1,13 @@
+<?php 
+	session_start(); 
+	error_reporting(E_ERROR | E_WARNING | E_PARSE);	
+ 	if(!isset($_SESSION['user_id']))
+	{
+	    $msg="Login om deze pagina te bereiken!"; 
+	    header("Location: userItem/login.php?msg=$msg");
+    	exit;
+	}
+?>
 <!DOCTYPE html>
 <html lang="en">
 <head>
