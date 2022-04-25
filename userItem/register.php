@@ -55,7 +55,7 @@
 <footer>
     <div class="wrapper">
       <div class="copyright">
-        &copy; 2020 - 2021 DeveloperLand&nbsp;&nbsp;All Rights Reserved
+        &copy; 2020 - 2021 Karim, Sharmake&nbsp;&nbsp;All Rights Reserved
       </div>
     </div>
   </footer>  
