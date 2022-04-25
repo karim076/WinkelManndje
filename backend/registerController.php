@@ -60,6 +60,6 @@
         ":pass" => $hash
     ]);
     $msg = "Uw acount is Succesvol aangemaakt log nu in!";
-    header("location: $base_url/login.php?msg=$msg");
+    header("location: $base_url/userItem/login.php?msg=$msg");
     exit;
 ?>
