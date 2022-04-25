@@ -41,6 +41,6 @@
     $_SESSION['username'] = $user["username"];
     $_SESSION['name'] = $user["name"];
     $_SESSION = $user['role'];
-    header("location: $base_url/index.php?msg=$naming");
+    header("location: $base_url/index.php");
     exit;
 ?>
