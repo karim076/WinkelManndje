@@ -6,9 +6,6 @@
     }
     $username = $_POST['username'];
     $pass = $_POST['pass'];
-    $hash = password_hash($pass, PASSWORD_DEFAULT);
-    var_dump($hash);
-    die;
     //1. Haal gegevens van gebruiker op, aan de hand van email/username
     //   Vijfstappenplan:
     //      1. Haal de verbinding erbij
