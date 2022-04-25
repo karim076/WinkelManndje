@@ -10,7 +10,7 @@
             <i class="fa fa-fw fa-user"></i>Welcome,<?php echo $_SESSION['name'] ?>
             <a href="<?php echo $base_url?>/userItem/logout.php">Uitloggen</a>
         <?php else: ?>
-            <a href="<?php echo $base_url?>/userItem/register.php"><i class="fa-solid fa-user-plus"></i> register</a>
+            <a href="<?php echo $base_url?>/userItem/register.php"><i class="fas fa-user-plus"></i> register</a>
             <a href="<?php echo $base_url?>/userItem/login.php"><i class="fa fa-fw fa-user"></i> Login</a>
         <?php endif; ?>
     </div>
