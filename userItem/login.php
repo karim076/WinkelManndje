@@ -9,7 +9,11 @@
     <?php require_once '../header.php'?>
   </header>
   <main>
-	<div class="center"><h2>Inloggen</h2></div>  
+	<div class="center"><h2>Inloggen</h2></div>
+	<?php  
+	if(isset($_SESSION['logged'])): ?>
+		<div><?php echo $_SESSION['logged']; ?></div>
+	<?php endif;?>
 	<div class="container">
 		<div class="screen">
 			<div class="screen__content">
@@ -44,7 +48,7 @@
 <footer>
     <div class="wrapper">
       <div class="copyright">
-        &copy; 2020 - 2021 DeveloperLand&nbsp;&nbsp;All Rights Reserved
+        &copy; 2020 - 2021 Karim, Sharmake&nbsp;&nbsp;All Rights Reserved
       </div>
     </div>
   </footer>  
