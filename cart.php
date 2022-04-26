@@ -13,20 +13,7 @@
         <h2>Winkelwagentje</h2>
         <div>
           <span>Dit zijn alle producten die u gaat bestellen. Controleer een laatste keer of alles klopt en ga daarna verder met de grote groene knop.</span>
-          <?php
-
-require_once 'backend/config.php';  
-
-$winkelwagentje = [
-    6 => 2,
-    7 => 1,
-];
-
-$hoeveelInWinkelwagentje = count($winkelwagentje);
-
-$totalPrice = 0;
-
-?>
+          <?php require_once 'backend/config.php';  ?>
 <table>
     <thead>
         <tr>
@@ -40,8 +27,11 @@ $totalPrice = 0;
     <tbody>
 
     <?php
-        $productId = 1;
-        foreach($winkelwagentje as $productId => $amount){
+        $amount = $_POST['number'];
+        $totalPrice = 0;
+        var_dump($_POST['id-number']);
+        die;
+        $productId = $_POST['id-number'];
           require_once 'backend/conn.php';  
             $stmt = $conn->prepare("SELECT * FROM products WHERE id = ". $productId .";");
             $stmt->execute();
@@ -54,19 +44,9 @@ $totalPrice = 0;
                 <td><?php echo $product['name']; ?></td>
                 <td><?php echo $product['description']; ?></td>
                 <td>&euro;<?php echo $product['price']; ?>,-</td>
-                <td><?php echo $amount ?></td>
+                <td><?php echo $amount; ?></td>
                 <td>&euro;<?php echo $totalProductPrice; ?>,-</td>
             </tr>
-            <?php
-        }
-    ?>
-    <tr>
-        <td></td>
-        <td></td>
-        <td></td>
-        <td></td>
-        <td>&euro;<?php echo $totalPrice; ?>,-</td>
-    </tr>
     </tbody>
 </table>
           <button><a href="payment.php">Dit is correct, verder naar betaling</a></button>
