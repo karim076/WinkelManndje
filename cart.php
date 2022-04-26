@@ -29,9 +29,7 @@
     <?php
         $amount = $_POST['number'];
         $totalPrice = 0;
-        var_dump($_POST['id-number']);
-        die;
-        $productId = $_POST['id-number'];
+        $productId = $_POST['product_Id'];
           require_once 'backend/conn.php';  
             $stmt = $conn->prepare("SELECT * FROM products WHERE id = ". $productId .";");
             $stmt->execute();
