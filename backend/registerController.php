@@ -14,7 +14,7 @@
         die('Email is ongeldig!');
     }
     # checks
-    if(empty($username))
+    if(!isset($username))
     {
         $_SESSION['logged'] = "Vul een titel in";
         header("location: ../userItem/register.php");
