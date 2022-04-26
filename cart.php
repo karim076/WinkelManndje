@@ -40,8 +40,9 @@ $totalPrice = 0;
     <tbody>
 
     <?php
-
+        $productId = 1;
         foreach($winkelwagentje as $productId => $amount){
+          require_once 'backend/conn.php';  
             $stmt = $db->prepare("SELECT * FROM products WHERE id = ". $productId .";");
             $stmt->execute();
             $product = $stmt->fetch(PDO::FETCH_ASSOC);
