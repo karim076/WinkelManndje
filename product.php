@@ -20,15 +20,49 @@
   <main>
     <div class="wrapper">
       <article>
-        <h3>DeveloperLand mok</h3>
+        <h3>HEREN T-SHIRT HEREN!</h3>
       </article>
         <div class="details">
           <div class="img">
-            <img src="images/merchandise/mok.JPG" alt="Een Mok">
+            <img src="img/merchandise/Schermafbeelding 2022-04-13 131236.png" alt="Een Mok">
           </div>
           <div class="msg">
-            <p><strong>Lorem ipsum dolor sit</strong> amet consectetur, adipisicing elit. Aperiam, rem.<br>
-            <strong>ipsum dolor sit</strong> amet consectetur, adipisicing elit. Perferendis itaque <strong>possimus ipsam distinctio</strong> amet suscipit deleniti officia, soluta voluptates, reprehenderit natus iusto, adipisci fugiat mollitia.</p>
+            <p>Modern shirt met korte mouwen, gemaakt van 100% voorgekrompen en ringgesponnen<break>katoen met een zijdezachte touch (satijnlabel). De buisvormige snit zorgt voor een hoge<break>bewegingsvrijheid. Wasbaar tot 40 ° C.</p>
+            <p><h2>100% katoen</h2><break>As: 99% katoen, 1% viscose<break>Sportgrijs: 85% katoen, 15% viscose<break>Ronde hals<break>Klassieke herensnit<break>185 g/m²<break>Korte mouwen<break>Enkelvoudige jersey<break>Nekband<break>Smalle ribgebreide kraag<break>Dubbel gestikte mouw- en onderzoom<break>Zijnaden<break>Ruime buisvormige snit<break>Wasbaar tot 40° C</p>
+            <p>
+              <button><a href="cart.php">Bestel nu de tickets (&euro; 24,95)</a></button>
+            </p>
+          </div>
+        </div>
+    </div>
+    <div class="wrapper">
+      <article>
+        <h3>UNDER ARMOUR RIVAL FLEECE HOODIE HEREN!</h3>
+      </article>
+        <div class="details">
+          <div class="img">
+            <img src="img/merchandise/Schermafbeelding 2022-04-13 131430.png" alt="Eeen Hoodie">
+          </div>
+          <div class="msg">
+            <p>Dit wordt je nieuwe favoriete lichtgewicht lievelingshoodie om in te sporten. Hij is licht,<break>comfortabel en superzacht aan de binnenkant.</p>
+            <p><h2>Productspecificaties</h2><break>80% katoen, 20% polyester<break>Losvallend: ruime pasvorm voor ultiem comfort<break>230 gram<break>Raglanmouwen<break>Geweven patch met logo<break>Superzachte, middelzware fleece van katoenmix met geruwde binnenkant voor extra warmte<break>Verstelbare capuchon met gekruiste constructie<break>Kangoeroezak aan de voorkant<break>Geribbelde manchetten en zoom aan de onderkant</p>
+            <p>
+              <button><a href="cart.php">Bestel nu de tickets (&euro; 24,95)</a></button>
+            </p>
+          </div>
+        </div>
+    </div>
+    <div class="wrapper">
+      <article>
+        <h3>JAKO LONGSLEEVE RUN 2.0 VROUWEN!</h3>
+      </article>
+        <div class="details">
+          <div class="img">
+            <img src="img/merchandise/Schermafbeelding 2022-04-13 131630.png" alt="Eeen Hoodie">
+          </div>
+          <div class="msg">
+          <p>Dit heren T-shirt met lange mouwen heeft een comfortabele,<break>licht aansluitende snit. De mouw is iets langer, maar niet onnodig breed aan de schouders.<break>De nekband, zijnaden en dubbel stiksel zorgen voor een uitstekende vormvastheid,<break> wasbeurt na wasbeurt! Het materiaal voelt heel zacht aan en het lagere gewicht zorgt voor extra comfort.</p>
+            <p><h2>Productspecificaties</h2><break>100% Polyester-Micromesh<break>Rug in Micro-Mesh<break>Ronde hals<break> Flatlocknaden<break>Materiaalmix Details<break>Details in Kontrastfarbe<break>Zippergarage</p>
             <p>
               <button><a href="cart.php">Bestel nu de tickets (&euro; 24,95)</a></button>
             </p>
