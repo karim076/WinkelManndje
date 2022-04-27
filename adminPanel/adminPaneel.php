@@ -39,22 +39,23 @@
 				<div class="table scroll tableFixHead">
 					<table>
 						<thead>
-				            <tr class="solid">
-				                <th>status</th>
-								<th>email</th>
-								<th>order_email</th>
-				                <th>order_number</th>
-				            </tr>
+				        <tr class="solid">
+				            <th>status</th>
+								    <th>email</th>
+								    <th>order_email</th>
+				            <th>order_number</th>
+				          </tr>
 			            </thead>
 			            <?php foreach($todo as $taken): ?>
-			            <tbody>			                <tr>
-			                    <?php $id = $taken['id'] ?>
-			                    <td><?php echo $taken['status']; ?></td>
-								<td><?php echo $taken['product']; ?></td>
-								<td><?php echo $taken['email_recipient']; ?></td>
-			                    <td><?php echo $taken['order_number']; ?></td>
-			                    <td><a href="edit.php?id=<?php echo $id;?>">Aanpassen</a></td>
-			                </tr>
+			            <tbody>			                
+                  <tr>
+			            <?php $id = $taken['id']?>
+			                <td><?php echo $taken['status']; ?></td>
+								      <td><?php echo $taken['product']; ?></td>
+								      <td><?php echo $taken['email_recipient']; ?></td>
+			                <td><?php echo $taken['order_number']; ?></td>
+			                <td><a href="edit.php?id=<?php echo $id;?>">Aanpassen</a></td>
+			              </tr>
 			            </tbody>
 	            		<?php endforeach; ?>
 	        		</table>
@@ -65,20 +66,20 @@
 				<div class="table scroll tableFixHead">
 					<table>
 						<thead>
-				            <tr>
-								<th>Titel</th>
-								<th>Naam</th>
-								<th>Asignee</th>
-				                <th>Bericht</th>
-				            </tr>
+				      <tr>
+								<th>status</th>
+								<th>email</th>
+								<th>order_email</th>
+				        <th>order_number</th>
+				      </tr>
 				        </thead>
 			            <?php foreach($progress as $doing): ?>
 			            	<tbody>
 				                <tr>
 				                    <?php $id = $doing['id'] ?>
 				                    <td><?php echo $doing['status']; ?></td>
-									<td><?php echo $doing['product']; ?></td>
-									<td><?php echo $doing['email_recipient']; ?></td>
+									          <td><?php echo $doing['email']; ?></td>
+									          <td><?php echo $doing['order_email']; ?></td>
 				                    <td><?php echo $doing['order_number']; ?></td>
 				                    <td><a href="edit.php?id=<?php echo $id;?>">Aanpassen</a></td>
 				                </tr>
@@ -92,21 +93,21 @@
 				<div class="table scroll tableFixHead">
 					<table>
 						<thead>
-				            <tr>
-								<th>Titel</th>
-								<th>Naam</th>
-								<th>Asignee</th>
-				                <th>Bericht</th>
-				            </tr>
+				      <tr>
+								<th>status</th>
+								<th>email</th>
+								<th>order_email</th>
+				        <th>order_number</th>
+				      </tr>
 			            </thead>
 			            <?php foreach($done as $klaar): ?>
 			            	<tbody>
 				                <tr>
 				                    <?php $id = $klaar['id'] ?>
-				                    <td><?php echo $klaar['statys']; ?></td>
-									<td><?php echo $klaar['naam']; ?></td>
-									<td><?php echo $klaar['asignee']; ?></td>
-				                    <td><?php echo $klaar['beschrijving']; ?></td>
+				                    <td><?php echo $klaar['status']; ?></td>
+									<td><?php echo $klaar['email']; ?></td>
+									<td><?php echo $klaar['order_email']; ?></td>
+				                    <td><?php echo $klaar['order_number']; ?></td>
 				                    <td><a href="edit.php?id=<?php echo $id;?>">Aanpassen</a></td>
 				                </tr>
 				            </tbody>
@@ -116,7 +117,7 @@
 			</div>
 		</div>
 	</main>
-    <footer>
-    </footer>
+  <footer>
+  </footer>
 </body>
 </html>
