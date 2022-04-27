@@ -9,7 +9,7 @@
     </header>
     <?php
         require_once '../backend/conn.php';
-        $query = "SELECT * FROM taken WHERE status = 'todo'";
+        $query = "SELECT * FROM winkeltje WHERE status = 'Inbehandeling'";
         $statement = $conn->prepare($query);
         $statement->execute();
         $todo = $statement->fetchAll(PDO::FETCH_ASSOC);
@@ -29,17 +29,17 @@
     ?>
     <main>
 		<!-- <a href="create.php">Nieuw Task</a> -->
-		<div class="flex1">
+		<!-- <div class="flex1">
 			<a href="create.php" class="btn">Nieuw Task</a>
 			<a href="personalTasks.php" class="btn">My tasks</a>
-		</div>
+		</div> -->
 		<div class="wrapper">
-			<div class="todo">
+			<div class="todo">                                                          
 				<h1>To-Do</h1>
 				<div class="table scroll tableFixHead">
 					<table>
 						<thead>
-				        <tr class="solid">
+				        <tr class="solid">    
 				            <th>status</th>
 								    <th>email</th>
 								    <th>order_email</th>
