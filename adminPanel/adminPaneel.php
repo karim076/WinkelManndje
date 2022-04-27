@@ -15,7 +15,7 @@
         $todo = $statement->fetchAll(PDO::FETCH_ASSOC);
 
     /*<!-- Ophalen -->*/
-        $query = "SELECT * FROM taken WHERE status = 'progress'";
+        $query = "SELECT * FROM Winkeltje WHERE status = 'progress'";
         $statement = $conn->prepare($query);
         $statement->execute();
         $progress = $statement->fetchAll(PDO::FETCH_ASSOC);
