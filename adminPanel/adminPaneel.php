@@ -9,6 +9,7 @@
     </header>
     <?php
         require_once '../backend/conn.php';
+    /*<!-- Ophinbehandeling -->*/
         $query = "SELECT * FROM winkeltje WHERE status = 'inbehandeling'";
         $statement = $conn->prepare($query);
         $statement->execute();
@@ -28,11 +29,11 @@
         /*var_dump($todo); testing*/
     ?>
     <main>
-		<!-- <a href="create.php">Nieuw Task</a> -->
-		<!-- <div class="flex1">
+		<a href="create.php">Nieuw Task</a>
+		<div class="flex1">
 			<a href="create.php" class="btn">Nieuw Task</a>
 			<a href="personalTasks.php" class="btn">My tasks</a>
-		</div> -->
+		</div> 
 		<div class="wrapper">
 			<div class="todo">                                                          
 				<h1>To-Do</h1>
