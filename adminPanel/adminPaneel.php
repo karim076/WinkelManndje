@@ -9,13 +9,13 @@
     </header>
     <?php
         require_once '../backend/conn.php';
-        $query = "SELECT * FROM winkeltje WHERE status = 'Inbehandeling'";
+        $query = "SELECT * FROM winkeltje WHERE status = 'inbehandeling'";
         $statement = $conn->prepare($query);
         $statement->execute();
         $todo = $statement->fetchAll(PDO::FETCH_ASSOC);
 
     /*<!-- Ophalen -->*/
-        $query = "SELECT * FROM Winkeltje WHERE status = 'progress'";
+        $query = "SELECT * FROM Winkeltje WHERE status = 'ophalen'";
         $statement = $conn->prepare($query);
         $statement->execute();
         $progress = $statement->fetchAll(PDO::FETCH_ASSOC);
