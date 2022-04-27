@@ -7,7 +7,7 @@
     <?php 
     error_reporting(E_ALL);
     if(isset($_SESSION['role']) and  $_SESSION['role'] === "2"):?>
-        <a href="<?php echo $base_url?>/panel/adminPanel.php"><i class="fa fa-user-tie"></i> Adminpaneel</a>
+        <a href="<?php echo $base_url?>/adminPanel/adminPaneel.php"><i class="fa fa-user-tie"></i> Adminpaneel</a>
     <?php endif;?>
         </div>
     <div class="left">
