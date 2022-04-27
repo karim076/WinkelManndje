@@ -21,7 +21,7 @@
         $progress = $statement->fetchAll(PDO::FETCH_ASSOC);
     /*<!-- Verzonden -->*/
 
-        $query = "SELECT * FROM taken WHERE status = 'done'";
+        $query = "SELECT * FROM winkeltje WHERE status = 'verzonden'";
         $statement = $conn->prepare($query);
         $statement->execute();
         $done = $statement->fetchAll(PDO::FETCH_ASSOC);
