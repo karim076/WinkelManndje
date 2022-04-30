@@ -39,6 +39,7 @@
     $_SESSION['user_id'] = $user['id'];
     $_SESSION['username'] = $user["username"];
     $_SESSION['name'] = $user["name"];
+    $_SESSION['email'] = $user['email'];
     $_SESSION['role'] = $user['role'];
     header("location: $base_url/index.php");
     exit;
