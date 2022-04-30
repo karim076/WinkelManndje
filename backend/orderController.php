@@ -11,17 +11,18 @@ $id_Product = $_POST['id'];
 require_once 'conn.php';
 $query = "INSERT INTO orders(email_recipient,order_number) 
               VALUES(:email_recipient,:order_number)
-            --   SELECT product
-            --   FROM orders
-              RIGHT JOIN products 
-              AS product 
-              ON orders.product = products.product WHERE products.id = $id_Product";
+              SELECT product
+              FROM products
+              WHERE :id = $id_Product
+              RIGHT JOIN orders 
+              ON orders.product = products.product";
     
 //3. Prepare
 $statement=$conn->prepare($query);
 //4. Execute
 $statement->execute
     ([
+        ":orders.product" => ":products.product",
         ":email_recipient" => $email_recipient,
         ":order_number" => $order_number
     ]);
