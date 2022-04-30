@@ -47,8 +47,12 @@
             </tr>
     </tbody>
 </table>
-          <button><a href="payment.php">Dit is correct, verder naar betaling</a></button>
-        </div>
+        <form method="POST" action="backend/orderController.php">
+          <div class="buttonStyle">
+            <input type="submit" value="Afronden">
+          </div>
+          <input type="hidden" value="<?php echo $productId ?>" name="id">
+        <form>
       </article>
     </div>
   </main>
