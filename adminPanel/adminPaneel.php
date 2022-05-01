@@ -10,19 +10,19 @@
     <?php
         require_once '../backend/conn.php';
     /*<!-- Ophinbehandeling -->*/
-        $query = "SELECT * FROM winkeltje WHERE status = 'inbehandeling'";
+        $query = "SELECT * FROM status WHERE status_column = 'inbehandeling'";
         $statement = $conn->prepare($query);
         $statement->execute();
         $todo = $statement->fetchAll(PDO::FETCH_ASSOC);
 
     /*<!-- Ophalen -->*/
-        $query = "SELECT * FROM Winkeltje WHERE status = 'ophalen'";
+        $query = "SELECT * FROM status WHERE status_column = 'ophalen'";
         $statement = $conn->prepare($query);
         $statement->execute();
         $progress = $statement->fetchAll(PDO::FETCH_ASSOC);
     /*<!-- Verzonden -->*/
 
-        $query = "SELECT * FROM winkeltje WHERE status = 'verzonden'";
+        $query = "SELECT * FROM status WHERE status_column = 'verzonden'";
         $statement = $conn->prepare($query);
         $statement->execute();
         $done = $statement->fetchAll(PDO::FETCH_ASSOC);
