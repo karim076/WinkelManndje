@@ -77,10 +77,10 @@
 <<<<<<< Updated upstream
               <p>Aantalen</p>
               <input type="number" value="1" name="number" placeholder="aantallen">
-              <input type="submit" value="Bestel nu (&euro; 24,95)" name="id-number">
+              <input type="submit" value="Bestel nu (&euro; 23,90)" name="id-number">
 =======
               <input type="number" name="number" placeholder="aantallen">
-              <input type="submit" value="Bestel nu (&euro; 24,95)" name="id-number" id="berekenen">
+              <input type="submit" value="Bestel nu (&euro; 23,90)" name="id-number" id="berekenen">
 >>>>>>> Stashed changes
               <input type="hidden" value="3" name="product_Id">
             </form>
