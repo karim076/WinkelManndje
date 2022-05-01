@@ -30,12 +30,8 @@
             <p>Modern shirt met korte mouwen, gemaakt van 100% voorgekrompen en ringgesponnen<break>katoen met een zijdezachte touch (satijnlabel). De buisvormige snit zorgt voor een hoge<break>bewegingsvrijheid. Wasbaar tot 40 ° C.</p>
             <p><h2>100% katoen</h2><break>As: 99% katoen, 1% viscose<break>Sportgrijs: 85% katoen, 15% viscose<break>Ronde hals<break>Klassieke herensnit<break>185 g/m²<break>Korte mouwen<break>Enkelvoudige jersey<break>Nekband<break>Smalle ribgebreide kraag<break>Dubbel gestikte mouw- en onderzoom<break>Zijnaden<break>Ruime buisvormige snit<break>Wasbaar tot 40° C</p>
             <form method="POST" action="cart.php">
-<<<<<<< Updated upstream
-              <p>Aantalen</p>
-              <input type="number" value='1' name="number" placeholder="aantallen">
-=======
+            <p>Aantalen</p>
               <input type="number" name="number" placeholder="aantallen" id="aantallen">
->>>>>>> Stashed changes
               <input type="submit" value="Bestel nu (&euro; 17,50)" name="id-number">
               <input type="hidden" value="1" name="product_Id">
             </form>
@@ -78,11 +74,6 @@
               <p>Aantalen</p>
               <input type="number" value="1" name="number" placeholder="aantallen">
               <input type="submit" value="Bestel nu (&euro; 23,90)" name="id-number">
-=======
-              <input type="number" name="number" placeholder="aantallen">
-              <input type="submit" value="Bestel nu (&euro; 23,90)" name="id-number" id="berekenen">
->>>>>>> Stashed changes
-              <input type="hidden" value="3" name="product_Id">
             </form>
           </div>
         </div>
