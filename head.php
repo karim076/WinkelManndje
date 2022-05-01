@@ -6,4 +6,5 @@
 <link href="https://fonts.googleapis.com/css2?family=Oswald&display=swap" rel="stylesheet">
 <link href="https://fonts.googleapis.com/css2?family=Lato&display=swap" rel="stylesheet">
 <script src="https://kit.fontawesome.com/a076d05399.js"></script>
+<script src="test.js"></script>
 <title>DeveloperLand - Het meest leerzame prepark voor het hele gezin!</title>
