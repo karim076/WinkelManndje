@@ -11,7 +11,7 @@
     <div class="wrapper">
       <article>
         <h2>Winkelwagentje</h2>
-        <div>
+        <div class="cart_button">
           <span>Dit zijn alle producten die u gaat bestellen. Controleer een laatste keer of alles klopt en ga daarna verder met de grote groene knop.</span>
           <?php require_once 'backend/config.php';  ?>
 <table>
@@ -50,12 +50,18 @@
             </tr>
     </tbody>
 </table>
+<<<<<<< Updated upstream
         <form method="POST" action="backend/orderController.php">
           <div class="buttonStyle">
             <input type="submit" value="Afronden">
           </div>
           <input type="hidden" value="<?php echo $productId ?>" name="id">
         <form>
+=======
+          <button><a href="payment.php">Dit is correct, verder naar betaling</a></button>
+          
+        </div>
+>>>>>>> Stashed changes
       </article>
     </div>
   </main>
