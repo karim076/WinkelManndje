@@ -22,7 +22,6 @@ $statement=$conn->prepare($query);
 //4. Execute
 $statement->execute
     ([
-        ":orders.product" => ":products.product",
         ":email_recipient" => $email_recipient,
         ":order_number" => $order_number
     ]);
