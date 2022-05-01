@@ -56,7 +56,7 @@
             <form method="POST" action="cart.php">
               <p>Aantalen</p>
               <input type="number" value="1" name="number" placeholder="aantallen">
-              <input type="submit"value="Bestel nu (&euro; 24,95)">
+              <input type="submit"value="Bestel nu (&euro; 73,00)">
               <input type="hidden" value="2" name="product_Id">
             </form>
           </div>
