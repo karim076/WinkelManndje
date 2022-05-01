@@ -36,7 +36,7 @@
 =======
               <input type="number" name="number" placeholder="aantallen" id="aantallen">
 >>>>>>> Stashed changes
-              <input type="submit" value="Bestel nu (&euro; 24,95)" name="id-number">
+              <input type="submit" value="Bestel nu (&euro; 17,50)" name="id-number">
               <input type="hidden" value="1" name="product_Id">
             </form>
           </div>
