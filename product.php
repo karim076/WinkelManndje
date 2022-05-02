@@ -51,7 +51,7 @@
             <p><h2>Productspecificaties</h2><break>80% katoen, 20% polyester<break>Losvallend: ruime pasvorm voor ultiem comfort<break>230 gram<break>Raglanmouwen<break>Geweven patch met logo<break>Superzachte, middelzware fleece van katoenmix met geruwde binnenkant voor extra warmte<break>Verstelbare capuchon met gekruiste constructie<break>Kangoeroezak aan de voorkant<break>Geribbelde manchetten en zoom aan de onderkant</p>
             <form method="POST" action="cart.php">
               <p>Aantalen</p>
-              <input type="number" value="1" name="number" placeholder="aantallen">
+              <input type="number" name="number" placeholder="aantallen">
               <input type="submit"value="Bestel nu (&euro; 73,00)">
               <input type="hidden" value="2" name="product_Id">
             </form>
@@ -70,10 +70,10 @@
           <p>Dit heren T-shirt met lange mouwen heeft een comfortabele,<break>licht aansluitende snit. De mouw is iets langer, maar niet onnodig breed aan de schouders.<break>De nekband, zijnaden en dubbel stiksel zorgen voor een uitstekende vormvastheid,<break> wasbeurt na wasbeurt! Het materiaal voelt heel zacht aan en het lagere gewicht zorgt voor extra comfort.</p>
             <p><h2>Productspecificaties</h2><break>100% Polyester-Micromesh<break>Rug in Micro-Mesh<break>Ronde hals<break> Flatlocknaden<break>Materiaalmix Details<break>Details in Kontrastfarbe<break>Zippergarage</p>
             <form method="POST" action="cart.php">
-<<<<<<< Updated upstream
               <p>Aantalen</p>
-              <input type="number" value="1" name="number" placeholder="aantallen">
+              <input type="number" name="number" placeholder="aantallen">
               <input type="submit" value="Bestel nu (&euro; 23,90)" name="id-number">
+              <input type="hidden" value="3" name="product_Id">
             </form>
           </div>
         </div>
