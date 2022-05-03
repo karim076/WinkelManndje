@@ -110,7 +110,7 @@
 				</div>
 			</div>
 			<div class="done">
-				<h1>Verzonden</h1>
+				<h1>Verz0nden</h1>
 				<div class="table scroll tableFixHead">
 					<table>
 						<thead>
@@ -128,7 +128,7 @@
 				                <tr>
 									<?php
 										if($klaar['status'] == 3):?>
-											<td><?php echo "Verzenden"; ?></td>									
+											<td><?php echo "Verzonden"; ?></td>									
 										<?php endif;?>
 				                    <!-- <td><//?php echo $klaar['status']; ?></td> -->
 									<td><?php echo $klaar['product']; ?></td>
