@@ -52,19 +52,26 @@
 			            <?php foreach($todo as $taken): ?>
 						<?php 
 						$product = json_decode($taken['product'], true); 
-						echo $product[0];
-						die;?>
+						$amount = $product['amount'];
+						$id_Product = $product['id'];
+						
+						$query = "SELECT name FROM products WHERE id = $id_Product";
+						$statement = $conn->prepare($query);
+						$statement->execute();
+						$name = $statement->fetch(PDO::FETCH_ASSOC);
+						$productNaam = $name['name'];
+						?>
 			            <tbody>			                
                   		<tr>
 							  <!-- <//?php $id = $taken['id'] ?> -->
-			            	<td><?php echo $taken['id'];?></td>
 								<?php
 									if($taken['status'] == 1):?>
 										<td><?php echo "Inbehandeling"; ?></td>									
 								<?php endif;?>
 							
 			                <!-- <td><//?php //echo $taken['status']; ?></td> -->
-							<td><?php echo $taken['product']; ?></td>
+							<td><?php echo $productNaam; ?></td>
+							<td><?php echo $amount; ?></td>
 							<td><?php echo $taken['email_recipient']; ?></td>
 			                <td><?php echo $taken['order_number']; ?></td>
 			                <td><a class="admin_edit" href="edit.php?id=<?php echo $taken['id'];?>">Aanpassen</a></td>
