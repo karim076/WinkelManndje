@@ -94,8 +94,6 @@
 			            <?php foreach($progress as $doing): ?>
 			            	<tbody>
 				                <tr>
-				                    <!-- <//?php $id = $doing['id'] ?> -->
-									<td><?php echo $doing['id']; ?></td>
 									<?php
 										if($doing['status'] == 2):?>
 											<td><?php echo "Ophalen"; ?></td>									
@@ -128,8 +126,6 @@
 			            <?php foreach($done as $klaar): ?>
 			            	<tbody>
 				                <tr>
-				                    <!-- <//?php $id = $klaar['id'] ?> -->
-									<td><?php echo $klaar['id']; ?></td>
 									<?php
 										if($klaar['status'] == 3):?>
 											<td><?php echo "Verzenden"; ?></td>									
