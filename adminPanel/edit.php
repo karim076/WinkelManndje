@@ -26,9 +26,9 @@
                 <label for="status_bestelling">Status Bestelling</label>
                 <select name="status_bestelling" id="status_bestelling">
                 <!-- <option Value=""> <//?php echo $order['status'] ?> </option> -->
-                    <option Value="Inbehandeling">Inbehandeling</options>
-                    <option Value="ophalen">ophalen</options>
-                    <option Value="Verzenden">Verzenden</options>
+                    <option Value="1">Inbehandeling</options>
+                    <option Value="2">ophalen</options>
+                    <option Value="3">Verzenden</options>
                 </select>
             </div>
 
