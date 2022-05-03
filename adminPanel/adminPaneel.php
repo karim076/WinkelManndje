@@ -1,6 +1,7 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
+	<link rel="stylesheet" href="../styles/table.css">
   <?php require_once '../head.php' ?>
 </head>
 <body>
@@ -29,12 +30,7 @@
         // var_dump($todo);
     ?>
     <main>
-		<a href="create.php">Nieuw Task</a>
-		<div class="flex1">
-			<a href="create.php" class="btn">Nieuw Task</a>
-			<a href="personalTasks.php" class="btn">My tasks</a>
-		</div> 
-		<div class="wrapper">
+		<div class="">
 			<div class="todo">                                                          
 				<h1>Inbehandeling</h1>
 				<div class="table scroll tableFixHead">
