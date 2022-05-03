@@ -40,8 +40,8 @@
 								<th>status</th>
 								<th>Product naam</th>
 								<th>Aantallen</th>
-								<th>order_email</th>
-								<th>order_number</th>
+								<th>Order_email</th>
+								<th>Order_number</th>
 								<th>Order aanpassen</th>
 				          	</tr>
 			            </thead>
@@ -82,27 +82,40 @@
 				<div class="table scroll tableFixHead">
 					<table>
 						<thead>
-						<tr class="solid">
-								<th>#</th>
-								<th>status</th>
-								<th>product</th>
-								<th>order_email</th>
-								<th>order_number</th>
-								<th>order aanpassen</th>
+							<tr class="solid">
+								<th>Status</th>
+								<th>Product naam</th>
+								<th>Aantallen</th>
+								<th>Order_email</th>
+								<th>Order_number</th>
+								<th>Order aanpassen</th>
 							</tr>
 				        </thead>
 			            <?php foreach($progress as $doing): ?>
+							<?php 
+							$product = json_decode($taken['product'], true); 
+							$amount = $product['amount'];
+							$id_Product = $product['id'];
+							
+							$query = "SELECT name FROM products WHERE id = $id_Product";
+							$statement = $conn->prepare($query);
+							$statement->execute();
+							$name = $statement->fetch(PDO::FETCH_ASSOC);
+							$productNaam = $name['name'];
+							?>
 			            	<tbody>
 				                <tr>
 									<?php
-										if($doing['status'] == 2):?>
+										if($taken['status'] == 2):?>
 											<td><?php echo "Ophalen"; ?></td>									
 									<?php endif;?>
+
 				                    <!-- <td><//?php echo $doing['status']; ?></td> -->
-									<td><?php echo $doing['product']; ?></td>
-									<td><?php echo $doing['email_recipient']; ?></td>
-				                    <td><?php echo $doing['order_number']; ?></td>
-				                    <td><a class="admin_edit" href="edit.php?id=<?php echo $id;?>">Aanpassen</a></td>
+									<td><?php echo $productNaam; ?></td>
+									<td><?php echo $amount; ?></td>
+				                    <td><?php echo $taken['order_number']; ?></td>
+									<td><?php echo $taken['order_number']; ?></td>
+				                    <td><a class="admin_edit" href="edit.php?id=<?php echo $taken['id'];?>">Aanpassen</a></td>
 				                </tr>
 				            </tbody>
 	            		<?php endforeach; ?>
@@ -110,31 +123,43 @@
 				</div>
 			</div>
 			<div class="done">
-				<h1>Verz0nden</h1>
+				<h1>Verzonden</h1>
 				<div class="table scroll tableFixHead">
 					<table>
 						<thead>
 							<tr>
-								<th>#</th>
-								<th>status</th>
-								<th>product</th>
-								<th>order_email</th>
-								<th>order_number</th>
-								<th>order aanpassen</th>
+								<th>Status</th>
+								<th>Product naam</th>
+								<th>Aantallen</th>
+								<th>Order_email</th>
+								<th>Order_number</th>
+								<th>Order aanpassen</th>
 							</tr>
 			            </thead>
 			            <?php foreach($done as $klaar): ?>
+							<?php 
+							$product = json_decode($taken['product'], true); 
+							$amount = $product['amount'];
+							$id_Product = $product['id'];
+						
+							$query = "SELECT name FROM products WHERE id = $id_Product";
+							$statement = $conn->prepare($query);
+							$statement->execute();
+							$name = $statement->fetch(PDO::FETCH_ASSOC);
+							$productNaam = $name['name'];
+							?>
 			            	<tbody>
 				                <tr>
 									<?php
-										if($klaar['status'] == 3):?>
+										if($taken['status'] == 3):?>
 											<td><?php echo "Verzonden"; ?></td>									
 										<?php endif;?>
 				                    <!-- <td><//?php echo $klaar['status']; ?></td> -->
-									<td><?php echo $klaar['product']; ?></td>
-									<td><?php echo $klaar['email_recipient']; ?></td>
-				                    <td><?php echo $klaar['order_number']; ?></td>
-				                    <td><a class="admin_edit" href="edit.php?id=<?php echo $id;?>">Aanpassen</a></td>
+									<td><?php echo $productNaam; ?></td>
+									<td><?php echo $amount; ?></td>
+				                    <td><?php echo $taken['order_number']; ?></td>
+									<td><?php echo $taken['order_number']; ?></td>
+				                    <td><a class="admin_edit" href="edit.php?id=<?php echo $taken['id'];?>">Aanpassen</a></td>
 				                </tr>
 				            </tbody>
 	            		<?php endforeach; ?>
