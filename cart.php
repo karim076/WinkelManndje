@@ -36,7 +36,8 @@
             $product = $stmt->fetch(PDO::FETCH_ASSOC);
             $totalProductPrice = $product['price'] * $amount;
             $totalPrice = $totalPrice + $totalProductPrice;
-            $array = [$productId => $amount];
+            $array = ["id"=> $productId,
+                      "amount"=> $amount];
             $array = json_encode($array);
             $_SESSION['product'] = $array
             ?>
