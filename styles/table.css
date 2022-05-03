@@ -1,0 +1,81 @@
+
+
+  section{
+    display: flex;
+    flex-direction: row;
+  }
+  .htext{
+    margin-top: 100px;
+  }
+  .btn:hover {
+    background-position: right center; /* change the direction of the change here */
+    color: #fff;
+    text-decoration: none;
+  }
+
+  .flex1 {
+    display: flex;
+    justify-content: center;
+  }
+  .todo, .progress, .done{
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    text-align: center;
+  }
+  table{
+    text-align: left;
+    table-layout:fixed;
+  }
+  table td {
+    font-size: 25px;
+    background:#e8edff;
+    border-radius: 10px;
+    margin: 5px;
+    color:#2a2a2a;
+    border-top:1px solid transparent;
+    padding:8px;
+    text-overflow:ellipsis;
+    overflow:hidden;
+    white-space:nowrap;
+  }
+  th{
+    font-size: 30px;
+  }
+  tr:nth-child(odd)
+  {
+    background-color:#ebebeb;
+  }
+  tr:first-child
+  {
+    background-color:#d3d3d3;
+  }
+  tr:hover
+  {
+    background-color:#d3d3d3;
+  }
+  td, tr{
+    padding: 5px;
+    text-align: left;
+
+  }
+  .tableFixHead          { overflow: auto; height: 100px; }
+  .tableFixHead thead { position: sticky; top: 0; z-index: 1; }
+
+  /* Just common table stuff. Really. */
+  table  { border-collapse: collapse; width: 100%; }
+  th, td { padding: 8px 16px; }
+  .scroll
+  {
+    height: 385px;
+    overflow-y: scroll;
+    border: 2px dotted black;
+    margin-bottom: 50px;
+  }
+  .taken h1,.taken h2 {
+    text-align: center;
+
+  }
+  .taken p span{
+    font-weight: bold;
+  }
