@@ -36,20 +36,24 @@
 		</div> 
 		<div class="wrapper">
 			<div class="todo">                                                          
-				<h1>To-Do</h1>
+				<h1>Inbehandeling</h1>
 				<div class="table scroll tableFixHead">
 					<table>
 						<thead>
-				        	<tr class="solid">
-								<th>#</th>    
+				        	<tr class="solid">    
 								<th>status</th>
-								<th>Product</th>
+								<th>Product naam</th>
+								<th>Aantallen</th>
 								<th>order_email</th>
 								<th>order_number</th>
 								<th>Order aanpassen</th>
 				          	</tr>
 			            </thead>
 			            <?php foreach($todo as $taken): ?>
+						<?php 
+						$product = json_decode($taken['product'], true); 
+						echo $product[0];
+						die;?>
 			            <tbody>			                
                   		<tr>
 							  <!-- <//?php $id = $taken['id'] ?> -->
@@ -71,7 +75,7 @@
 				</div>
 			</div>
 			<div class="progress">
-				<h1>Progress</h1>
+				<h1>Ophalen</h1>
 				<div class="table scroll tableFixHead">
 					<table>
 						<thead>
@@ -105,7 +109,7 @@
 				</div>
 			</div>
 			<div class="done">
-				<h1>Done</h1>
+				<h1>Verzonden</h1>
 				<div class="table scroll tableFixHead">
 					<table>
 						<thead>
