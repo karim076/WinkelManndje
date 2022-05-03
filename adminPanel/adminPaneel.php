@@ -91,7 +91,7 @@
 								<th>Order aanpassen</th>
 							</tr>
 				        </thead>
-			            <?php foreach($progress as $doing): ?>
+			            <?php foreach($progress as $taken): ?>
 							<?php 
 							$product = json_decode($taken['product'], true); 
 							$amount = $product['amount'];
@@ -113,7 +113,7 @@
 				                    <!-- <td><//?php echo $doing['status']; ?></td> -->
 									<td><?php echo $productNaam; ?></td>
 									<td><?php echo $amount; ?></td>
-				                    <td><?php echo $taken['order_number']; ?></td>
+				                    <td><?php echo $taken['email_recipient']; ?></td>
 									<td><?php echo $taken['order_number']; ?></td>
 				                    <td><a class="admin_edit" href="edit.php?id=<?php echo $taken['id'];?>">Aanpassen</a></td>
 				                </tr>
@@ -136,7 +136,7 @@
 								<th>Order aanpassen</th>
 							</tr>
 			            </thead>
-			            <?php foreach($done as $klaar): ?>
+			            <?php foreach($done as $taken): ?>
 							<?php 
 							$product = json_decode($taken['product'], true); 
 							$amount = $product['amount'];
@@ -157,7 +157,7 @@
 				                    <!-- <td><//?php echo $klaar['status']; ?></td> -->
 									<td><?php echo $productNaam; ?></td>
 									<td><?php echo $amount; ?></td>
-				                    <td><?php echo $taken['order_number']; ?></td>
+				                    <td><?php echo $taken['email_recipient']; ?></td>
 									<td><?php echo $taken['order_number']; ?></td>
 				                    <td><a class="admin_edit" href="edit.php?id=<?php echo $taken['id'];?>">Aanpassen</a></td>
 				                </tr>
