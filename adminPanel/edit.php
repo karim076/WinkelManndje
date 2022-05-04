@@ -22,7 +22,7 @@
                     <option Value="3">Verzenden</options>
                 </select>
             </div>
-            <input type="submit" value="Order opslaan">
+            <input type="submit" class="submit" value="Order opslaan">
         </form>
     </div>  
     </div>  
