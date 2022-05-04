@@ -70,7 +70,10 @@
 							<td><?php echo $amount; ?></td>
 							<td><?php echo $taken['email_recipient']; ?></td>
 			                <td><?php echo $taken['order_number']; ?></td>
-			                <td><a class="admin_edit" href="edit.php?id=<?php echo $taken['id'];?>">Aanpassen</a></td>
+			                <form method="POST" action="edit.php">
+				                <td><input type="submit" class="admin_edit" value="Aanpassen"></td>
+								<input type="hidden" name="id" value="<?php echo $taken['id'];?>">
+							</form>
 			            </tr>
 			            </tbody>
 	            		<?php endforeach; ?>
@@ -115,7 +118,10 @@
 									<td><?php echo $amount; ?></td>
 				                    <td><?php echo $taken['email_recipient']; ?></td>
 									<td><?php echo $taken['order_number']; ?></td>
-				                    <td><a class="admin_edit" href="edit.php?id=<?php echo $taken['id'];?>">Aanpassen</a></td>
+									<form method="POST" action="edit.php">
+				                    	<td><input type="submit" class="admin_edit" value="Aanpassen"></td>
+										<input type="hidden" name="id" value="<?php echo $taken['id'];?>">
+									</form>
 				                </tr>
 				            </tbody>
 	            		<?php endforeach; ?>
@@ -159,7 +165,10 @@
 									<td><?php echo $amount; ?></td>
 				                    <td><?php echo $taken['email_recipient']; ?></td>
 									<td><?php echo $taken['order_number']; ?></td>
-				                    <td><a class="admin_edit" href="edit.php?id=<?php echo $taken['id'];?>">Aanpassen</a></td>
+									<form method="POST" action="edit.php">
+										<td><input type="submit" class="admin_edit" value="Aanpassen"></td>
+										<input type="hidden" name="id" value="<?php echo $taken['id'];?>">
+									</form>
 				                </tr>
 				            </tbody>
 	            		<?php endforeach; ?>
