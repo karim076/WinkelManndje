@@ -52,6 +52,7 @@
     </tbody>
 </table>
         <form method="POST" action="backend/orderController.php">
+          <input type="hidden" name = "action" value = "order gemaakt">
           <div class="buttonStyle">
             <input type="submit" value="Afronden">
           </div>
