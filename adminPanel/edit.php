@@ -9,23 +9,14 @@
     <div class="container">
         <h1>Aanpassen order</h1>
 
-        <?php
-            $id = $_GET['id'];
-
-            require_once '../backend/conn.php';
-            $query = "SELECT * FROM orders WHERE id = :id";
-            $statement = $conn->prepare($query);
-            $statement->execute([":id" => $id]);
-            $order = $statement->fetch(PDO::FETCH_ASSOC);
-        ?>
-        <form action ="../backend/adminPaneel.php" method='POST'>
+        <form action ="../backend/adminController.php" method='POST'>
             <input type="hidden" name="action" value="edit">
             <input type="hidden" name="id" value="<?php echo $id; ?>">
 
             <div class="form-group">
+                <input type="hidden" name="id" value="<?php echo $_POST['id'] ?>">
                 <label for="status_bestelling">Status Bestelling</label>
-                <select name="status_bestelling" id="status_bestelling">
-                <!-- <option Value=""> <//?php echo $order['status'] ?> </option> -->
+                <select name="status" id="status_bestelling">
                     <option Value="1">Inbehandeling</options>
                     <option Value="2">ophalen</options>
                     <option Value="3">Verzenden</options>
