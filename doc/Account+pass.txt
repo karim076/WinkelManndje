@@ -1,0 +1,4 @@
+Admin = username = user1/password = pass
+Normal user = username = test1/ password = pass
+
+(Test purposes)
