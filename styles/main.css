@@ -365,11 +365,13 @@ to   { opacity: 1; }
 /* Admin paneel edit */
 
 input.admin_edit{
-  /* background-color: blue; */
   font-weight: bold;
   color: #000000;
   padding: 20px;
   width: 150px;
+  font-size: 23px;
+  text-align: center;
+  padding-left: 10px;
   
 }
 .admin_edit:hover{
@@ -379,6 +381,6 @@ input.admin_edit{
 input.submit{
   margin-left: 125px;
   margin-top: 11px;
-  /* padding-left: 20px; */
+  padding: 6px;
 
 }
