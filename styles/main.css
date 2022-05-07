@@ -379,8 +379,21 @@ input.admin_edit{
 
 }
 input.submit{
-  margin-left: 125px;
-  margin-top: 11px;
+  margin-left: 175px;
+  margin-top: 18px;
   padding: 6px;
+  font-size: 18px;
+  padding-right: 55px;
 
+}
+.status{
+  margin-left: 16px;
+  margin-top: 18px;
+  /* padding: 6px; */
+  font-size: 18px;
+  padding-right: 30px;
+}
+.bestelling{
+  font-size: 20px;
+  margin-left: 10px;
 }

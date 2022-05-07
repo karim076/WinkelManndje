@@ -15,8 +15,8 @@
 
             <div class="form-group">
                 <input type="hidden" name="id" value="<?php echo $_POST['id'] ?>">
-                <label for="status_bestelling">Status Bestelling</label>
-                <select name="status" id="status_bestelling">
+                <label for="status_bestelling"class="bestelling">Status Bestelling</label>
+                <select name="status" class="status" id="status_bestelling">
                     <option Value="1">Inbehandeling</options>
                     <option Value="2">ophalen</options>
                     <option Value="3">Verzenden</options>
