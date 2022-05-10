@@ -7,7 +7,7 @@
     <?php require_once '../header.php'; ?>
 
     <div class="container">
-        <h1>Aanpassen order</h1>
+        <h1 >Aanpassen order</h1>
         <form action ="../backend/adminController.php" method='POST'>
             <input type="hidden" name="action" value="edit">
             <input type="hidden" name="id" value="<?php echo $id; ?>">
