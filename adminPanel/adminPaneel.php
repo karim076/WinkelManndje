@@ -134,7 +134,7 @@
 					<table>
 						<thead>
 							<tr>
-								<th>Status</th>
+								<th>Email</th>
 								<th>Product naam</th>
 								<th>Aantallen</th>
 								<th>Order_email</th>
